@@ -9,7 +9,8 @@ A trivia game that auto-generates 10 random questions from all topics
 
 # Demo 
 
-![]([https://media.giphy.com/media/fXx7YM6pWsliFWYrJs/giphy.gif](https://media.giphy.com/media/CCJXbP4STry4i91Fhb/giphy.gif)) ![](https://media.giphy.com/media/APNRqRVYk7FHoYNvxt/giphy.gif)
+![](https://media.giphy.com/media/CCJXbP4STry4i91Fhb/giphy.gif)
+![](https://media.giphy.com/media/APNRqRVYk7FHoYNvxt/giphy.gif)
 
 # Tech Stack
 - XCode
