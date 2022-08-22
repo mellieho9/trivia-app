@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct answerRow: View {
+    @EnvironmentObject var triviaManager: TriviaManager
     var answer: Answer
     @State private var isSelected = false
     var green = Color(hue: 0.437, saturation: 0.711, brightness: 0.711)
@@ -23,14 +24,17 @@ struct answerRow: View {
                 Image(systemName: answer.isCorrect ? "checkmark.circle.fill" : "x.circle.fill").foregroundColor(answer.isCorrect ? green : red)
             }
             
-        }.padding().frame(maxWidth: .infinity, alignment: .leading).foregroundColor(isSelected ? Color("AccentColor") : .gray ).background(.white).cornerRadius(10).shadow(color: isSelected ? (answer.isCorrect ? green : red ) : .gray, radius: 5, x: 0.5, y: 0.5).onTapGesture {
-            isSelected = true
+        }.padding().frame(maxWidth: .infinity, alignment: .leading).foregroundColor(triviaManager.answerSelected ? (isSelected ? Color("AccentColor") : .gray) : Color("AccentColor")).background(.white).cornerRadius(10).shadow(color: isSelected ? (answer.isCorrect ? green : red ) : .gray, radius: 5, x: 0.5, y: 0.5).onTapGesture {
+            if !triviaManager.answerSelected {
+                isSelected = true
+                triviaManager.selectAnswer(answer: answer)
+            }
         }
     }
 }
 
 struct answerRow_Previews: PreviewProvider {
     static var previews: some View {
-        answerRow(answer: Answer(text: "Single", isCorrect: false))
+        answerRow(answer: Answer(text: "Single", isCorrect: false)).environmentObject(TriviaManager())
     }
 }

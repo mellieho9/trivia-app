@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var triviaManager = TriviaManager()
     var body: some View {
         NavigationView {
             VStack(spacing: 40){
@@ -15,7 +16,7 @@ struct ContentView: View {
                     Text("All Topics Trivia").lilacTitle()
                     Text("Are you ready to test out your trivia knowledge?").foregroundColor(Color("AccentColor")).multilineTextAlignment(.center)
                     NavigationLink {
-                        TriviaView()
+                        TriviaView().environmentObject(triviaManager)
                     } label: {
                         primaryButton(text: "Let's go!")
                     }

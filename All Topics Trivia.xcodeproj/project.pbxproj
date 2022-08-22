@@ -22,6 +22,7 @@
 		04032B6B28B178B100ED62F4 /* answerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04032B6A28B178B100ED62F4 /* answerRow.swift */; };
 		04032B6D28B17D0D00ED62F4 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04032B6C28B17D0D00ED62F4 /* TriviaView.swift */; };
 		04032B6F28B17E1500ED62F4 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04032B6E28B17E1500ED62F4 /* Trivia.swift */; };
+		04CC92FE28B3DEE4008F314F /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC92FD28B3DEE4008F314F /* TriviaManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		04032B6A28B178B100ED62F4 /* answerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = answerRow.swift; sourceTree = "<group>"; };
 		04032B6C28B17D0D00ED62F4 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
 		04032B6E28B17E1500ED62F4 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		04CC92FD28B3DEE4008F314F /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				04032B3528B16DD500ED62F4 /* Assets.xcassets */,
 				04032B3728B16DD500ED62F4 /* Preview Content */,
 				04032B5F28B1741C00ED62F4 /* Extensions.swift */,
+				04CC92FD28B3DEE4008F314F /* TriviaManager.swift */,
 			);
 			path = "All Topics Trivia";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				04032B6D28B17D0D00ED62F4 /* TriviaView.swift in Sources */,
 				04032B6F28B17E1500ED62F4 /* Trivia.swift in Sources */,
 				04032B3428B16DD200ED62F4 /* ContentView.swift in Sources */,
+				04CC92FE28B3DEE4008F314F /* TriviaManager.swift in Sources */,
 				04032B6B28B178B100ED62F4 /* answerRow.swift in Sources */,
 				04032B3228B16DD200ED62F4 /* All_Topics_TriviaApp.swift in Sources */,
 				04032B6928B1787700ED62F4 /* Answer.swift in Sources */,
